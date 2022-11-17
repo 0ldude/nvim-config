@@ -19,7 +19,4 @@ require("notify.config.highlights").setup{
     NotifyINFOBody  = "#F5F9D7",
     NotifyDEBUGBody = "#F5F9D7",
     NotifyTRACEBody = "#F5F9D7",
-    Normal = "#1D2021",
-    --NotifyLogTime Comment
-    --NotifyLogTitle Special
 }

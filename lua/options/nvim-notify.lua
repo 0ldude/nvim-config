@@ -1,4 +1,4 @@
-require("notify.config").setup {
+require("notify").setup {
     level = "INFO",
     timeout = 5000,
     max_width = 100,
