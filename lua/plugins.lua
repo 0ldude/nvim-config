@@ -177,4 +177,8 @@ return require('packer').startup(function(use)
     use {
         "rcarriga/nvim-notify",
     }
+    use {
+        'anuvyklack/fold-preview.nvim',
+        requires = 'anuvyklack/keymap-amend.nvim',
+    }
 end)
