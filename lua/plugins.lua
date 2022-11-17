@@ -1,5 +1,4 @@
 -- [[ plugins.lua ]]
-
 return require('packer').startup(function(use)
     -- [[ Plugins Go Here ]]
     -- Packer can manage itself
@@ -50,7 +49,7 @@ return require('packer').startup(function(use)
         requires = "nvim-lua/plenary.nvim",
         after = "nvim-lua/plenary.nvim",
     }
- 
+
     -- cool icons
     use {
         "nvim-lualine/lualine.nvim",
@@ -130,18 +129,52 @@ return require('packer').startup(function(use)
         "nvim-neorg/neorg",
         -- latest stable release
         tag = "*",
-        ft = "norg",
+        -- ft = "norg",
         requires = {
             "nvim-treesitter",
             "telescope.nvim",
             "nvim-neorg/neorg-telescope",
             "nvim-lua/plenary.nvim",
         },
+        -- after = "nvim-treesitter",
         -- Treesitter needed for the next step
         -- autoinstalls parsers for norg files
         -- run = ":Neorg sync-parsers",
     }
+    -- distraction-free mode
     use {
 	    "Pocco81/true-zen.nvim",
+    }
+    -- autosave
+    use {
+	    "Pocco81/auto-save.nvim",
+    }
+    -- smooth scrolling
+    use {
+        'declancm/cinnamon.nvim',
+    }
+    use {
+        "petertriho/nvim-scrollbar",
+    }
+    use {
+        "mcauley-penney/tidy.nvim",
+    }
+    use {
+        "stevearc/dressing.nvim"
+    }
+    use{
+        "ziontee113/icon-picker.nvim",
+        requires = "stevearc/dressing.nvim",
+    }
+    use {
+        'sudormrfbin/cheatsheet.nvim',
+        requires = {
+            {'nvim-telescope/telescope.nvim'},
+            {'nvim-lua/popup.nvim'},
+            {'nvim-lua/plenary.nvim'},
+        },
+    }
+    use {
+        "rcarriga/nvim-notify",
     }
 end)

@@ -1,6 +1,7 @@
 require('neorg').setup {
     load = {
         ["core.defaults"] = {
+            -- this module exposes no customization options
         },
         -- export .norg files to other formats
         ["core.export"] = {
@@ -17,6 +18,13 @@ require('neorg').setup {
                 extension = "md",
             }
         },
+        --["core.neorgcmd.commands.return"] = {
+        --    -- Command module for core.neorgcmd designed
+        --    -- to return to the last location the user
+        --    -- was in before they entered Neorg
+
+        --    -- this module exposes no customization options
+        --},
         -- autocompletion framework for neorg
         ["core.norg.completion"] = {
             config = {
@@ -28,8 +36,8 @@ require('neorg').setup {
             config = {
                 icon_preset = "diamond",
                 -- code blocks settings
-                dim_code_blocks = true,
-                content_only = true,
+                -- dim_code_blocks = true,
+                -- content_only = true,
                 -- dim rectangle will span as far as the longest line in 
                 -- the code block
                 width = "content",
@@ -66,14 +74,32 @@ require('neorg').setup {
                 custom_tag_completion = false,
             }
         },
-        ["core.norg.manoeuvre"] = {
-            config = {
-            }
-        },
+        --["core.gtd.ui"] = {
+        --    -- this module exposes no customization options
+        --},
+        --["core.gtd.queries"] = {
+        --    -- Custom gtd queries, that respect the neorg GTD specs
+        --    -- (:h neorg-gtd-format)
+
+        --    -- this module exposes no customization options
+        --},
+        --["core.highlights"] = {
+        --    config = {
+        --        -- highlights = "",
+        --        -- heading = "",
+        --        -- dim = "",
+        --        --
+        --        -- false, "all", "except_undone" and "cancelled"
+        --        -- todo_items_match_color = "",
+        --    }
+        --},
+        --["core.norg.manoeuvre"] = {
+        --    -- this module exposes no customization options
+        --},
         ["core.presenter"] = {
             config = {
                 zen_mode = "truezen",
             }
-        }
+        },
     },
 }

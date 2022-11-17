@@ -1,0 +1,25 @@
+require("notify.config.highlights").setup{
+    NotifyERRORBorder = "#CC241D",
+    NotifyWARNBorder = "#D79921",
+    NotifyINFOBorder = "#458588",
+    NotifyDEBUGBorder = "#B16286",
+    NotifyTRACEBorder = "#98971A",
+    NotifyERRORIcon = "#CC241D",
+    NotifyWARNIcon = "#D79921",
+    NotifyINFOIcon = "#458588",
+    NotifyDEBUGIcon = "#B16286",
+    NotifyTRACEIcon = "#98971A",
+    NotifyERRORTitle  = "#CC241D",
+    NotifyWARNTitle = "#D79921",
+    NotifyINFOTitle = "#458588",
+    NotifyDEBUGTitle  = "#B16286",
+    NotifyTRACETitle  = "#98971A",
+    NotifyERRORBody = "#F5F9D7",
+    NotifyWARNBody  = "#F5F9D7",
+    NotifyINFOBody  = "#F5F9D7",
+    NotifyDEBUGBody = "#F5F9D7",
+    NotifyTRACEBody = "#F5F9D7",
+    Normal = "#1D2021",
+    --NotifyLogTime Comment
+    --NotifyLogTitle Special
+}
