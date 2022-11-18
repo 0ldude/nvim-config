@@ -1,8 +1,8 @@
 vim.api.nvim_set_hl(0, "Normal", { bg = "#1D2021" })
-vim.api.nvim_set_hl(0, "Normal", { fg = "#F5F9D7" })
+vim.api.nvim_set_hl(0, "Normal", { fg = "#FBF1C7" })
 
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#1D2021" })
-vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#F5F9D7" })
+vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#FBF1C7" })
 
 vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "#1D2021" })
 vim.api.nvim_set_hl(0, "EndOfBuffer", { fg = "#1D2021" })
