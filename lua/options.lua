@@ -2,7 +2,7 @@
 
 -- [[ Context ]]
 -- str:  Show col for max line length
-vim.opt.colorcolumn = '80'
+vim.opt.colorcolumn = '81'
 -- bool: Show line numbers
 vim.opt.number = true
 -- bool: Show relative line numbers

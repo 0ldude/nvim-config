@@ -51,8 +51,8 @@ require("options/true-zen")
 
 -- General and plugin-specific highlight-groups
 require("highlight-groups/nvim")
-require("highlight-groups/barbar")
-require("highlight-groups/nvim-notify")
+--require("highlight-groups/barbar")
+--require("highlight-groups/nvim-notify")
 
 -- Plugins
 require("plugins")
