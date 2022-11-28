@@ -15,6 +15,11 @@ vim.opt.termguicolors = true
 -- autocommands
 require("autocmds")
 
+-- General and plugin-specific highlight-groups
+require("highlight-groups/nvim")
+require("highlight-groups/barbar")
+require("highlight-groups/nvim-notify")
+
 -- General and plugin-specific keymaps
 require("keymaps")
 require("keymaps/icon-picker")
@@ -48,11 +53,6 @@ require("options/telescope")
 require("options/tidy")
 require("options/trouble")
 require("options/true-zen")
-
--- General and plugin-specific highlight-groups
-require("highlight-groups/nvim")
---require("highlight-groups/barbar")
---require("highlight-groups/nvim-notify")
 
 -- Plugins
 require("plugins")

@@ -28,15 +28,19 @@ return require('packer').startup(function(use)
     use {
         "mhartington/formatter.nvim",
     }
+    -- icons
+    use {
+        "nvim-tree/nvim-web-devicons"
+    }
     use {
         "folke/trouble.nvim",
-        requires = "kyazdani42/nvim-web-devicons",
+        requires = "nvim-tree/nvim-web-devicons",
     }
 
     -- tab bar
     use {
         "romgrk/barbar.nvim",
-         requires = "kyazdani42/nvim-web-devicons",
+        requires = "nvim-tree/nvim-web-devicons",
     }
 
     -- fuzzy finder
@@ -53,7 +57,7 @@ return require('packer').startup(function(use)
     -- cool icons
     use {
         "nvim-lualine/lualine.nvim",
-        requires = "kyazdani42/nvim-web-devicons",
+        requires = "nvim-tree/nvim-web-devicons",
     }
 
     -- tree visual file manager
@@ -129,14 +133,14 @@ return require('packer').startup(function(use)
         "nvim-neorg/neorg",
         -- latest stable release
         tag = "*",
-        -- ft = "norg",
+        --ft = "norg",
         requires = {
+            "nvim-lua/plenary.nvim",
             "nvim-treesitter",
             "telescope.nvim",
             "nvim-neorg/neorg-telescope",
-            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons",
         },
-        -- after = "nvim-treesitter",
         -- Treesitter needed for the next step
         -- autoinstalls parsers for norg files
         -- run = ":Neorg sync-parsers",

@@ -18,13 +18,13 @@ require('neorg').setup {
                 extension = "md",
             }
         },
-        --["core.neorgcmd.commands.return"] = {
-        --    -- Command module for core.neorgcmd designed
-        --    -- to return to the last location the user
-        --    -- was in before they entered Neorg
+        ["core.neorgcmd.commands.return"] = {
+            -- Command module for core.neorgcmd designed
+            -- to return to the last location the user
+            -- was in before they entered Neorg
 
-        --    -- this module exposes no customization options
-        --},
+            -- this module exposes no customization options
+        },
         -- autocompletion framework for neorg
         ["core.norg.completion"] = {
             config = {
@@ -34,15 +34,15 @@ require('neorg').setup {
         -- use icons instead of text for lists and such
         ["core.norg.concealer"] = {
             config = {
+                -- can be "normal", "diamond", "varied"
                 icon_preset = "diamond",
                 -- code blocks settings
-                -- dim_code_blocks = true,
-                -- content_only = true,
-                -- dim rectangle will span as far as the longest line in 
+                -- can be "content_only", "adaptive", "width"
+                -- dim_code_blocks = "width",
+                -- dim rectangle will span as far as the longest line in
                 -- the code block
-                width = "content",
-                padding = 4,
-                conceal = false,
+                -- padding = 4,
+                conceal = true,
             }
         },
         -- directory tree for neorg
@@ -61,6 +61,28 @@ require('neorg').setup {
                 -- The name of the main (root) .norg file
                 index = "index.norg",
                 default_workspace = "home",
+            }
+        },
+        ["core.norg.journal"] = {
+            config = {
+                workspace = "personal",
+                journal_folder = "journal",
+                strategy = "nested",
+                template_name = "template.norg",
+                use_template = true,
+                toc_format = {
+                    "title",
+                    "yyyy",
+                    "mm",
+                    "dd",
+                    "link",
+                }
+            }
+        },
+        ["core.norg.qol.toc"] = {
+            config = {
+                close_split_on_jump = false,
+                toc_split_placement = "left",
             }
         },
         -- get things done framework
